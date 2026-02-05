@@ -30,6 +30,15 @@ A cloud-native ecosystem designed to decouple business logic into independent se
 * **The Fix:** Migrated to **Raw SQL**, reducing P99 latency from ~100ms to 42ms.
 * **Key Tech:** Go, Docker, PostgreSQL, Cloud Run, `sync.Mutex` Rate Limiter.
 
+### 3. [Go Semantic Cache Gateway](https://github.com/adi290491/go-semantic-cache)
+> *AI Infrastructure, Vector Search, & Latency Optimization
+
+* **A cost-control firewall designed to intercept LLM traffic and serve responses from memory using vector similarity.
+* **The Architecture: A "Dual-Path" retrieval engine that checks for Exact Matches (O(1)) and Semantic Matches (HNSW Index) before calling OpenAI.
+* **The Challenge: Production LLM queries were averaging ~3,000ms latency and incurring high token costs for repetitive questions.
+* **The Fix: Implemented Redis Vector Search with Cosine Similarity, reducing P99 latency to <50ms (~5,000x speedup) for cached hits.
+* **Key Tech: Go (Goroutines), Redis Stack (RediSearch), OpenAI Embeddings, Docker.
+
 ### 2. [Go-Unix-Shell](https://github.com/adi290491/go-unix-shell)
 > *Systems Programming, OS Internals, & Kernel Interfaces*
 
