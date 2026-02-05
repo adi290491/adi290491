@@ -31,7 +31,7 @@ A cloud-native ecosystem designed to decouple business logic into independent se
 * **Key Tech:** Go, Docker, PostgreSQL, Cloud Run, `sync.Mutex` Rate Limiter.
 
 ### 3. [Go Semantic Cache Gateway](https://github.com/adi290491/go-semantic-cache)
-> *AI Infrastructure, Vector Search, & Latency Optimization
+> *AI Infrastructure, Vector Search, & Latency Optimization*
 
 * **A cost-control firewall designed to intercept LLM traffic and serve responses from memory using vector similarity.
 * **The Architecture: A "Dual-Path" retrieval engine that checks for Exact Matches (O(1)) and Semantic Matches (HNSW Index) before calling OpenAI.
